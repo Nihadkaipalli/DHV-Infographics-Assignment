@@ -79,6 +79,7 @@ plt.title('Death rate of India', fontsize=14,
 plt.tick_params(axis='x', colors='white', labelsize=8)
 plt.tick_params(axis='y', colors='white', labelsize=8)
 
+# Adding text blocks describing each subplot
 plt.figtext(1.02, 0.09, '    The provided code orchestrates an exploratory\ndata analysis workflow focusing on various factors\nwhich affects population across multiple countries.'
 
             '\n\n    The first graph vividly showcasing the trajectory\nof population growth of Countries over the years. The\ngraph illustrates the compelling story of demographic \nshifts, vividly portraying the remarkable expansion of \npopulations of these countries over successive years.'
@@ -87,8 +88,10 @@ plt.figtext(1.02, 0.09, '    The provided code orchestrates an exploratory\ndata
             '\n\n    The final horizontal bar plot showcases Indias crude \n death rate across various years.A consistent decline in the \n death rate is observable over the years,aligning with India \n being the worlds most populous country. An intriguing \n observation is the slight increase in the death rate in 2020,\n attributed to the impact of the Covid-19 pandemic compared\n to previous years.'
             '\n\n    By systematically examining these factors, it offers valuable\n insights into the complex interplay of variables impacting\n population growth.This comprehensive analysis helps in \n understanding the intricate relationships and potential drivers \n that contribute to the fluctuations and trends observed in \n populations worldwide.', ha='left', fontsize=12, color='#d7e6ed', fontfamily='Times New Roman', bbox=dict(facecolor='black', edgecolor='white', alpha=0.5))
 
+# Adding student name and ID as footer
 plt.figtext(1.02, 0.92, 'Student Name : Mohammed Nihad Kaipalli\nStudent ID : 22081746', ha='left', fontsize=15,
             color='#d7e6ed', fontfamily='Rockwell', bbox=dict(facecolor='black', edgecolor='white', alpha=0.5))
-plt.tight_layout(rect=[0, 0.03, 1, 0.95])
 
+# Adjusting layout and saving the plot as an image
+plt.tight_layout(rect=[0, 0.03, 1, 0.95])
 plt.savefig('22081746.png', dpi=300, bbox_inches='tight')
